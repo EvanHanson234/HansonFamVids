@@ -1,0 +1,144 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Ysabeau Office", sans-serif;
+    line-height: 1.6;
+    background-color: #C7EACF;
+    color: #404040;
+  }
+  
+  header {
+    background-color: #5FBF8E;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  nav {
+    position: relative;
+    align-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }  
+  
+  .thumbnail {
+    background-color: #EEF6ED;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .thumbnail .title {
+    padding: 10px;
+    text-align: center; /* Center the title horizontally */
+  }
+  
+  .about {
+    margin-top: 20px;
+    background-color: #EEF6ED;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    margin-bottom: 10px;
+  }
+  
+  .about ul {
+    margin-bottom: 10px;
+  }
+  
+  .about li {
+    margin-bottom: 5px;
+  }
+  
+  .video {
+    margin-top: 20px;
+    background-color: #EEF6ED;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .video h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Use the desired aspect ratio (16:9 for example) */
+    height: auto;
+    overflow: hidden;
+    max-width: 800px; /* Adjust the maximum width as desired */
+    margin: 0 auto; /* Center the video container horizontally */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* Additional styling for responsiveness */
+  @media screen and (max-width: 768px) {
+    .video-container {
+      padding-bottom: 75%; /* Adjust as needed for different aspect ratios on smaller screens */
+    }
+  }  
+  
+  footer {
+    background-color: #5FBF8E;
+    padding: 20px;
+    text-align: center;
+  }
+  
